@@ -63,13 +63,8 @@
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui assumenda pariatur ratione veniam et, inventore fugiat odit sed perferendis repellendus quae dolore. Quam obcaecati temporibus, adipisci culpa distinctio cum.</p>
-                </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam dolorem ex ipsum aperiam error dicta! Ut odit, amet accusantium id magnam, autem dolorum sint minima corrupti, voluptatum aperiam dolores cumque odio quaerat modi!
-                        Nihil impedit amet facilis minus velit ab ea ex aut officia voluptas, esse odit assumenda est provident, inventore iure mollitia, ducimus consequatur excepturi facere dignissimos? Placeat dolor ipsam totam nisi quisquam ea eos
-                    </p>
+                <div class="col-md-8">
+                    <p>Saya Ridho Aulia' Rahman, saya berumur 18 tahun. Saya seorang pelajar di SMKN 4 Bojonegoro. Saya mudah beradaptasi, bekerja sama dalam tim, serta senang mempelajari hal yang baru. </p>
                 </div>
             </div>
         </div>
@@ -90,31 +85,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="./img/pas foto.png" class="card-img-top" alt="...">
+                        <img src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="./img/pas foto.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="./img/pas foto.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Readen Fauzi Lawyer</h5>
+                            <p class="card-text">Konsultasikan Permasalahan Hukum Anda, Kami Layani melalui Whatssap atau Telepon</p>
+                            <a href="https://radenfauzilawyer.com/" class="btn btn-primary">Visit</a>
                         </div>
                     </div>
                 </div>
