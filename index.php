@@ -137,18 +137,18 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form>
+                    <form action="https://formsubmit.co/edoaurahman@gmail.com" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                            <input type="text" name="name" class="form-control" id="name" aria-describedby="name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Kirim</button>
                     </form>
