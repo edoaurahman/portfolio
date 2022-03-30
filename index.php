@@ -115,8 +115,39 @@
                 </div>
             </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,192C68.6,192,137,192,206,202.7C274.3,213,343,235,411,234.7C480,235,549,213,617,213.3C685.7,213,754,235,823,202.7C891.4,171,960,85,1029,74.7C1097.1,64,1166,128,1234,165.3C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </section>
     <!-- End Projects -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Contact -->
 </body>
 <script src="./assets/js/bootstrap.min.js"></script>
 
