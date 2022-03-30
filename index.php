@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- My Css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -81,7 +82,7 @@
     <!-- Projects -->
     <section id="projects">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center mb-3">
                 <div class="col">
                     <h2>My Projects</h2>
                 </div>
@@ -155,7 +156,14 @@
             </div>
 
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,256L34.3,245.3C68.6,235,137,213,206,202.7C274.3,192,343,192,411,192C480,192,549,192,617,170.7C685.7,149,754,107,823,128C891.4,149,960,235,1029,250.7C1097.1,267,1166,213,1234,186.7C1302.9,160,1371,160,1406,160L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </section>
+
+    <footer class="bg-primary text-white pb-5 text-center">
+        <p>Created with <i class="bi bi-heart-fill text-danger"></i> by
+            <a class="text-white fw-bold text-decoration-none" href="https://www.facebook.com/eedo53">Edoaurahman</a>
+        </p>
+    </footer>
     <!-- End Contact -->
 </body>
 <script src="./assets/js/bootstrap.min.js"></script>
