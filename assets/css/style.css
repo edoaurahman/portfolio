@@ -1,0 +1,9 @@
+.card {
+    height: 100%;
+}
+
+.card .image {
+    display: flex;
+    align-items: center;
+    height: 22rem;
+}

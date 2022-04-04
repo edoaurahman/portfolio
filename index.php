@@ -10,6 +10,7 @@
     <!-- My Css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -85,11 +86,26 @@
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="card-img-top" alt="...">
+                        <div class="image">
+                            <img src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="card-img-top" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Readen Fauzi Lawyer</h5>
                             <p class="card-text">Konsultasikan Permasalahan Hukum Anda, Kami Layani melalui Whatssap atau Telepon</p>
-                            <a href="https://radenfauzilawyer.com/" class="btn btn-primary">Visit</a>
+                            <a href="https://radenfauzilawyer.com/" target="_blank" class="btn btn-primary">Kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://www.garasibesiwina.com/wp-content/uploads/2020/11/logo-pintu-garasi-besi-300x136.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pintu Garasi Besi</h5>
+                            <p class="card-text">Melayani Pemesan Pintu Garasi Besi Wina Trees Door, Pintu Garasi Besi Sliding & Lipat Surabaya, Sidoarjo, Pasuruan & Jawa Timur</p>
+                            <a href="https://pintugarasibesi.id/" target="_blank" class="btn btn-primary">Kunjungi</a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +147,9 @@
             </div>
 
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,256L34.3,245.3C68.6,235,137,213,206,202.7C274.3,192,343,192,411,192C480,192,549,192,617,170.7C685.7,149,754,107,823,128C891.4,149,960,235,1029,250.7C1097.1,267,1166,213,1234,186.7C1302.9,160,1371,160,1406,160L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0d6efd" fill-opacity="1" d="M0,256L34.3,245.3C68.6,235,137,213,206,202.7C274.3,192,343,192,411,192C480,192,549,192,617,170.7C685.7,149,754,107,823,128C891.4,149,960,235,1029,250.7C1097.1,267,1166,213,1234,186.7C1302.9,160,1371,160,1406,160L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+        </svg>
     </section>
 
     <footer class="bg-primary text-white pb-5 text-center">
