@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./img/pas foto.png" type="image/x-icon">
 </head>
 
 <body>
