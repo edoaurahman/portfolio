@@ -110,6 +110,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://risnadarbelink.com/wp-content/uploads/2022/04/logo-darbelink.webp" class="card-img-top bg-dark" width="100px" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Risna Darbelink</h5>
+                            <p class="card-text">Kami menyediakan semua fitur digital yang dapat membantu Anda untuk lebih fokus pada pengembangan bisnis. Mari bergabung dan diskusi lebih lanjut.</p>
+                            <a href="https://risnadarbelink.com/" target="_blank" class="btn btn-primary">Kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
