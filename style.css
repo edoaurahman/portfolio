@@ -1,12 +1,26 @@
-.jumbotron{
-    padding-top :2rem;
+.jumbotron {
+    padding-top: 2rem;
     background-color: #e2edff;
 }
 
-#projects{
+#projects {
     background-color: #e2edff;
 }
 
-section{
+section {
     padding-top: 5rem;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    height: 100%;
+}
+
+.card {
+    width: 18rem;
+    margin: auto;
 }

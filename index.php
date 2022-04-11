@@ -84,11 +84,11 @@
                     <h2>My Projects</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center ">
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="image">
-                            <img src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="card-img-top" alt="...">
+                            <img src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="img-fluid" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Readen Fauzi Lawyer</h5>
@@ -114,7 +114,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="image">
-                            <img src="https://risnadarbelink.com/wp-content/uploads/2022/04/logo-darbelink.webp" class="card-img-top bg-dark" width="100px" alt="...">
+                            <img src="https://risnadarbelink.com/wp-content/uploads/2022/04/logo-darbelink.webp" class="card-img-top bg-dark" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Risna Darbelink</h5>
