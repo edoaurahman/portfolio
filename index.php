@@ -88,7 +88,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="image">
-                            <img src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="img-fluid" alt="...">
+                            <img loading="lazy" src="https://radenfauzilawyer.com/wp-content/uploads/2022/03/logo-advokat-2-03-putih.png" class="img-fluid" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Readen Fauzi Lawyer</h5>
@@ -101,7 +101,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="image">
-                            <img src="https://www.garasibesiwina.com/wp-content/uploads/2020/11/logo-pintu-garasi-besi-300x136.png" class="card-img-top" alt="...">
+                            <img loading="lazy" src="https://www.garasibesiwina.com/wp-content/uploads/2020/11/logo-pintu-garasi-besi-300x136.png" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Pintu Garasi Besi</h5>
@@ -114,7 +114,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="image">
-                            <img src="https://risnadarbelink.com/wp-content/uploads/2022/04/logo-darbelink.webp" class="card-img-top bg-dark" alt="...">
+                            <img loading="lazy" src="https://risnadarbelink.com/wp-content/uploads/2022/04/logo-darbelink.webp" class="card-img-top bg-dark" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Risna Darbelink</h5>
