@@ -15,7 +15,9 @@ const router = useRouter()
 // Menangani event sebelum navigasi dimulai
 router.beforeEach((_to, _from, next) => {
   setLoading(true)
-  next()
+  setTimeout(() => {
+    next()
+  }, 300)
 })
 
 // Menangani event setelah navigasi selesai
