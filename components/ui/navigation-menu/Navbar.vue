@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import ThemeToggle from "@/components/ui/toggle/ThemeToggle.vue";
+import { ThemeToggle } from "@/components/ui/toggle/";
 import { Icon } from '@iconify/vue'
 
 type Link = {
@@ -40,7 +40,8 @@ const links: Link[] = [
         <template v-for="link in links">
           <li>
             <NuxtLink :to="link.path" exact-active-class="text-primary">
-              <Button variant="outline" :class="{'shadow-2xl shadow-gray-800 dark:shadow-white': $route.path === link.path}">
+              <Button variant="outline"
+                :class="{ 'shadow-2xl shadow-gray-800 dark:shadow-white': $route.path === link.path }">
                 <Icon :icon="link.icon" />
               </Button>
             </NuxtLink>
