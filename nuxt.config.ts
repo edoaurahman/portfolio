@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   modules: [
+    "nuxt-typedjs",
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@hypernym/nuxt-anime",
@@ -11,7 +12,6 @@ export default defineNuxtConfig({
     "nuxt-particles",
     "@nuxt/fonts",
     "@nuxtjs/i18n",
-    "nuxt-typedjs",
   ],
   shadcn: {
     prefix: "",

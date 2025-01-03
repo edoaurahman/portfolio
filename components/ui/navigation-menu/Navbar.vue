@@ -1,33 +1,33 @@
 <script lang="ts" setup>
 import { ThemeToggle } from "@/components/ui/toggle/";
-import { Icon } from '@iconify/vue'
-
+import { Icon } from "@iconify/vue";
+const localePath = useLocalePath();
 type Link = {
   name: string;
   icon: string;
   path: string;
-}
+};
 
 const links: Link[] = [
   {
-    name: 'Home',
-    icon: 'lucide:house',
-    path: '/',
+    name: "Home",
+    icon: "lucide:house",
+    path: "/",
   },
   {
-    name: 'Projects',
-    icon: 'lucide:proportions',
-    path: '/projects',
+    name: "Projects",
+    icon: "lucide:proportions",
+    path: "/projects",
   },
   {
-    name: 'About',
-    icon: 'lucide:user',
-    path: '/about',
+    name: "About",
+    icon: "lucide:user",
+    path: "/about",
   },
   {
-    name: 'Contact',
-    icon: 'lucide:mail',
-    path: '/contact',
+    name: "Contact",
+    icon: "lucide:mail",
+    path: "/contact",
   },
 ];
 </script>
@@ -39,9 +39,11 @@ const links: Link[] = [
       <ul class="flex items-center py-3 px-4 gap-5 text-card-foreground hover:gap-7 transition-all duration-300">
         <template v-for="link in links">
           <li>
-            <NuxtLink :to="link.path" exact-active-class="text-primary">
-              <Button variant="outline"
-                :class="{ 'shadow-2xl shadow-gray-800 dark:shadow-white': $route.path === link.path }">
+            <NuxtLink :to="localePath(link.path)" exact-active-class="text-primary">
+              <Button variant="outline" :class="{
+                'shadow-2xl shadow-gray-800 dark:shadow-white':
+                  $route.path === link.path,
+              }">
                 <Icon :icon="link.icon" />
               </Button>
             </NuxtLink>

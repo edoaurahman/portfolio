@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center justify-center pt-32">
-    <span class="font-newsreader italic text-white-shadow text-center text-4xl">Projects</span>
+    <span class="font-newsreader italic text-white-shadow text-center text-4xl">{{ $t('projects') }}</span>
     <span class=" text-lg font-geist italic text-gray-500">A list of projects I've worked on</span>
   </div>
   <section class="py-20 px-4 md:px-8">
