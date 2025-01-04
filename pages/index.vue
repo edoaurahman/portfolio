@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
+const { t } = useI18n();
+const localPath = useLocalePath();
 useSeoMeta({
-  title: "Home",
+  title: t("index.title"),
   description: "Welcome to my portfolio",
 });
 
@@ -49,23 +51,22 @@ const skills: {
 
 const featuredProjects = [
   {
-    title: "E-Commerce Platform",
-    description:
-      "A full-featured online shopping platform built with Vue and Node.js",
-    image: "https://placehold.co/600x400",
-    tags: ["Vue.js", "Node.js", "MongoDB"],
+    title: "Booking Room Polinema",
+    link: "https://github.com/edoaurahman/booking-class-2g",
+    year: "2023",
+    image: "/img/projects/bookingroom.png",
   },
   {
-    title: "Task Management App",
-    description: "Real-time collaborative task management application",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "Firebase", "TypeScript"],
+    title: "Portal RW",
+    link: "https://github.com/edoaurahman/PORTAL-RW",
+    year: "2024",
+    image: "/img/projects/portal-rw.png",
   },
   {
     title: "Portfolio Website",
-    description: "Modern portfolio website built with Nuxt and Tailwind",
+    link: "https://hrcd.fr/",
+    year: "2024",
     image: "https://placehold.co/600x400",
-    tags: ["Nuxt.js", "Tailwind", "Vue.js"],
   },
 ];
 
@@ -128,10 +129,14 @@ onMounted(async () => {
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="default" class="p-6">
-              <NuxtLink to="/projects"> View My Work </NuxtLink>
+              <NuxtLink :to="localPath('/projects')">
+                {{ $t("index.view_my_work") }}
+              </NuxtLink>
             </Button>
             <Button variant="outline" class="p-6">
-              <NuxtLink to="/contact"> Get in Touch </NuxtLink>
+              <NuxtLink :to="localPath('/contact')">
+                {{ $t("index.get_in_touch") }}
+              </NuxtLink>
             </Button>
           </div>
         </div>
@@ -144,7 +149,7 @@ onMounted(async () => {
         <h2
           class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white"
         >
-          Tech Stack
+          {{ $t("index.tech_stack") }}
         </h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -165,48 +170,28 @@ onMounted(async () => {
     </section>
 
     <!-- Latest Projects Preview -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+    <section class="py-20 bg-gray-50 dark:bg-background">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
-            Featured Projects
+            {{ $t("index.featured_projects") }}
           </h2>
           <NuxtLink
             to="/projects"
             class="text-purple-600 hover:text-purple-700 dark:text-purple-400 font-medium"
           >
-            View All →
+            {{ $t("index.view_all") }} →
           </NuxtLink>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="(project, index) in featuredProjects"
-            :key="index"
-            class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-          >
-            <img
-              :src="project.image"
-              :alt="project.title"
-              class="w-full h-48 object-cover"
+          <div v-for="(project, index) in featuredProjects" :key="index">
+            <MacCard
+              :title="`${project.title}`"
+              :year="`${project.year}`"
+              :image="`${project.image}`"
+              :link="`${project.link}`"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                {{ project.title }}
-              </h3>
-              <p class="text-gray-600 dark:text-gray-300 mb-4">
-                {{ project.description }}
-              </p>
-              <div class="flex gap-2">
-                <span
-                  v-for="tag in project.tags"
-                  :key="tag"
-                  class="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300"
-                >
-                  {{ tag }}
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

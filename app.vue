@@ -2,6 +2,7 @@
 import { LoadingBar } from "./components/ui/loading";
 import { Navbar } from "./components/ui/navigation-menu";
 import { LanguageToggle } from "./components/ui/toggle";
+import { Footer } from "./components/ui/footer";
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} - Edodev` : "Edodev";
@@ -11,7 +12,7 @@ useHead({
     {
       rel: "icon",
       type: "image/x-icon",
-      href: "/favicon.ico",
+      href: "/img/logo.png",
     },
   ],
 });
@@ -47,4 +48,5 @@ router.onError(() => {
   <Navbar />
   <LanguageToggle />
   <NuxtPage />
+  <Footer />
 </template>

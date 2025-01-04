@@ -8,7 +8,7 @@
     <!-- Loading animation overlay -->
     <div class="fixed inset-0 flex items-center justify-center">
       <svg viewBox="0 0 100 100" class="w-[250px]">
-        <rect width="100" height="100" rx="2" fill="#242539" />
+        <rect width="100" height="100" rx="2" fill="none" />
         <g fill="none" stroke="#2EC7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <!-- dashed trail -->
           <g transform="translate(20 35)">
