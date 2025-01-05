@@ -19,12 +19,13 @@
       </div>
       <div class="flex h-56 justify-center overflow-hidden rounded-lg">
         <NuxtImg
-          width="1536"
+          width="500"
+          quality="80"
+          loading="lazy"
           :alt="`${props.title} project image`"
           class="h-full rounded-lg object-cover transition-all duration-300 hover:scale-105"
           :aria-label="`${props.title} project image`"
           :src="`${props.image}`"
-          format="gif|webp"
         />
       </div>
       <div class="absolute bottom-0 flex w-full justify-center">

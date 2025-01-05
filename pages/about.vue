@@ -12,7 +12,7 @@
         </div>
         <div class="relative order-1 md:order-2 w-48 h-48 md:w-72 md:h-72 mx-auto">
           <div class="aspect-w-4 aspect-h-3 rounded-full overflow-hidden">
-            <NuxtImg width="500" :src="`https://www.gravatar.com/avatar/${hashedEmail}?s=500`" alt="Profile"
+            <NuxtImg loading="lazy" quality="80" width="500" :src="`https://www.gravatar.com/avatar/${hashedEmail}?s=500`" alt="Profile"
               class="object-cover w-full h-full rounded-full shadow-xl" />
           </div>
         </div>
