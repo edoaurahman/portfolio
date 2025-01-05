@@ -63,10 +63,10 @@ const featuredProjects = [
     image: "/img/projects/portal-rw.png",
   },
   {
-    title: "Portfolio Website",
-    link: "https://hrcd.fr/",
+    title: "HerbaScan",
+    link: "https://github.com/orgs/PBL-2024/repositories",
     year: "2024",
-    image: "https://placehold.co/600x400",
+    image: "/img/projects/herbascan.png",
   },
 ];
 

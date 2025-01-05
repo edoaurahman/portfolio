@@ -24,7 +24,7 @@
           class="h-full rounded-lg object-cover transition-all duration-300 hover:scale-105"
           :aria-label="`${props.title} project image`"
           :src="`${props.image}`"
-          format="webp"
+          format="gif|webp"
         />
       </div>
       <div class="absolute bottom-0 flex w-full justify-center">

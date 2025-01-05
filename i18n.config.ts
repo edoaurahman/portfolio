@@ -38,7 +38,7 @@ export default defineI18nConfig(() => ({
       },
       projects: {
         title: "Projek",
-        sub_title: "Daftar proyek yang pernah saya kerjakan",
+        sub_title: "Daftar projek yang pernah saya kerjakan",
       },
       about: {
         title: "Tentang Saya",
