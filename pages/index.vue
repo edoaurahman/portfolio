@@ -1,3 +1,82 @@
+<template>
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+      <!-- Background Pattern -->
+      <NuxtParticles id="tsparticles" url="js/particles.json" :load="onLoad"></NuxtParticles>
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <!-- Hero Content -->
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
+              <!-- Animasi typing untuk nama -->
+              <span id="typed-name"></span>
+            </span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
+            <span id="typed-sub-content"></span>
+          </p>
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="default" class="p-6">
+              <NuxtLink :to="localPath('/projects')">
+                {{ $t("index.view_my_work") }}
+              </NuxtLink>
+            </Button>
+            <Button variant="outline" class="p-6">
+              <NuxtLink :to="localPath('/contact')">
+                {{ $t("index.get_in_touch") }}
+              </NuxtLink>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Skills Section -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+          {{ $t("index.tech_stack") }}
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div v-for="(skill, index) in skills" :key="index"
+            class="p-6 text-center rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition-shadow">
+            <div class="text-4xl mb-4 flex justify-center">
+              <Icon :icon="skill.icon" />
+            </div>
+            <h3 class="font-medium text-gray-900 dark:text-white">
+              {{ skill.name }}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Projects Preview -->
+    <section class="py-20 bg-gray-50 dark:bg-background">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+            {{ $t("index.featured_projects") }}
+          </h2>
+          <NuxtLink :to="localPath('/projects')"
+            class="text-purple-600 hover:text-purple-700 dark:text-purple-400 font-medium">
+            {{ $t("index.view_all") }} →
+          </NuxtLink>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div v-for="(project, index) in featuredProjects" :key="index">
+            <MacCard :title="`${project.title}`" :year="`${project.year}`" :image="`${project.image}`"
+              :link="`${project.link}`" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 const { t } = useI18n();
@@ -99,86 +178,6 @@ onMounted(async () => {
   });
 });
 </script>
-
-<template>
-  <main class="min-h-screen">
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center">
-      <!-- Background Pattern -->
-      <NuxtParticles id="tsparticles" url="js/particles.json" :load="onLoad"></NuxtParticles>
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-          <!-- Hero Content -->
-          <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              <!-- Animasi typing untuk nama -->
-              <span id="typed-name"></span>
-            </span>
-          </h1>
-          <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
-            <span id="typed-sub-content"></span>
-          </p>
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="default" class="p-6">
-              <NuxtLink :to="localPath('/projects')">
-                {{ $t("index.view_my_work") }}
-              </NuxtLink>
-            </Button>
-            <Button variant="outline" class="p-6">
-              <NuxtLink :to="localPath('/contact')">
-                {{ $t("index.get_in_touch") }}
-              </NuxtLink>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Skills Section -->
-    <section class="py-20 bg-white dark:bg-gray-800">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          {{ $t("index.tech_stack") }}
-        </h2>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div v-for="(skill, index) in skills" :key="index"
-            class="p-6 text-center rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition-shadow">
-            <div class="text-4xl mb-4 flex justify-center">
-              <Icon :icon="skill.icon" />
-            </div>
-            <h3 class="font-medium text-gray-900 dark:text-white">
-              {{ skill.name }}
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Latest Projects Preview -->
-    <section class="py-20 bg-gray-50 dark:bg-background">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
-            {{ $t("index.featured_projects") }}
-          </h2>
-          <NuxtLink :to="localPath('/projects')"
-            class="text-purple-600 hover:text-purple-700 dark:text-purple-400 font-medium">
-            {{ $t("index.view_all") }} →
-          </NuxtLink>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(project, index) in featuredProjects" :key="index">
-            <MacCard :title="`${project.title}`" :year="`${project.year}`" :image="`${project.image}`"
-              :link="`${project.link}`" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</template>
 <style>
 .bg-grid-gray-100 {
   background-image: linear-gradient(to right,
