@@ -1,8 +1,8 @@
 #!/bin/bash
 git pull
-bun i
+npm i
 export NODE_OPTIONS="--max-old-space-size=8192"
-bun run build
+npm run build
 pm2 restart all
 echo "Deployed successfully"
  
