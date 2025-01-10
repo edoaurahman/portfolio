@@ -9,7 +9,24 @@
     <div class="max-w-7xl mx-auto">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <template v-for="(project, index) in featuredProjects" :key="index">
-          <MacCard :title="`${project.title}`" :year="`${project.year}`" :image="`${project.image}`" :link="`${project.link}`" />
+          <MacCard :title="`${project.title}`" :year="`${project.year}`" :image="`${project.image}`"
+            :link="`${project.link}`" />
+        </template>
+      </div>
+    </div>
+  </section>
+  <div class="flex flex-col items-center justify-center pt-32">
+    <span class="font-newsreader italic text-white-shadow text-center text-4xl">{{ $t("projects.oot") }}</span>
+    <span class="text-lg font-geist italic text-gray-500">{{
+      $t("projects.other_skills")
+      }}</span>
+  </div>
+  <section class="py-20 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <template v-for="(project, index) in ootProjects" :key="index">
+          <MacCard :title="`${project.title}`" :year="`${project.year}`" :image="`${project.image}`"
+            :link="`${project.link}`" />
         </template>
       </div>
     </div>
@@ -72,6 +89,39 @@ const featuredProjects = [
     link: "https://www.npmjs.com/package/nuxt-typedjs",
     year: "2025",
     image: "/img/projects/nuxt-typedjs.gif",
+  },
+];
+
+const ootProjects = [
+  {
+    title: "Service HP",
+    link: '',
+    year: "2025",
+    image: "/img/projects/service_hp_1.png",
+  },
+  {
+    title: "Service HP",
+    link: '',
+    year: "2024",
+    image: "/img/projects/service_hp_2.png",
+  },
+  {
+    title: "Service HP",
+    link: '',
+    year: "2024",
+    image: "/img/projects/service_hp_3.png",
+  },
+  {
+    title: "Setup Web Server",
+    link: '',
+    year: "",
+    image: "/img/projects/setup_server.png",
+  },
+  {
+    title: "IoT (ESP32)",
+    link: '',
+    year: "",
+    image: "/img/projects/IoT.png",
   },
 ];
 

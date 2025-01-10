@@ -1,7 +1,6 @@
 <template>
   <div>
-    <NuxtLink :to="`${props.link}`" rel="noopener noreferrer" target="_blank"
-      :aria-label="`${props.title} project link`"
+    <NuxtLink :to="`${props.link}`" rel="noopener noreferrer" target="_blank" :aria-label="`${props.title} project link`"
       class="group relative flex cursor-pointer flex-col gap-1 rounded-lg border border-white/10 bg-zinc-900/80 p-1 shadow-2xl shadow-zinc-950/50 ">
       <div class="flex gap-1 px-1 py-[2px]">
         <div
@@ -15,7 +14,7 @@
         </div>
       </div>
       <div class="flex h-56 justify-center overflow-hidden rounded-lg">
-        <NuxtImg width="500" quality="80" loading="lazy" :alt="`${props.title} project image`"
+        <NuxtImg width="400" quality="60" loading="lazy" :alt="`${props.title} project image`"
           class="h-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
           :aria-label="`${props.title} project image`" :src="`${props.image}`" />
       </div>
@@ -48,7 +47,7 @@ const props = defineProps<{
   title: string;
   year: string;
   image: string;
-  link: string;
+  link: string | null;
 }>();
 </script>
 
