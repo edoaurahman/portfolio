@@ -18,16 +18,16 @@
           </p>
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="default" class="p-6">
-              <NuxtLink :to="localPath('/projects')">
+            <NuxtLinkLocale to="/projects">
+              <Button variant="default" class="p-6">
                 {{ $t("index.view_my_work") }}
-              </NuxtLink>
-            </Button>
-            <Button variant="outline" class="p-6">
-              <NuxtLink :to="localPath('/contact')">
+              </Button>
+            </NuxtLinkLocale>
+            <NuxtLinkLocale to="/contact">
+              <Button variant="outline" class="p-6">
                 {{ $t("index.get_in_touch") }}
-              </NuxtLink>
-            </Button>
+              </Button>
+            </NuxtLinkLocale>
           </div>
         </div>
       </div>
@@ -61,10 +61,9 @@
           <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
             {{ $t("index.featured_projects") }}
           </h2>
-          <NuxtLink :to="localPath('/projects')"
-            class="text-purple-600 hover:text-purple-700 dark:text-purple-400 font-medium">
+          <NuxtLinkLocale to="/projects" class="text-purple-600 hover:text-purple-700 dark:text-purple-400 font-medium">
             {{ $t("index.view_all") }} →
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -80,7 +79,6 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 const { t } = useI18n();
-const localPath = useLocalePath();
 useSeoMeta({
   title: t("index.title"),
   description: "Welcome to my portfolio",

@@ -2,11 +2,11 @@
   <div class="bg-background pb-20">
     <div class="linebreak"></div>
     <footer class="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-6">
-      <NuxtLink aria-current="page" :to="localPath('/')"
+      <NuxtLinkLocale aria-current="page" to="/"
         class="router-link-active router-link-exact-active flex shrink-0 items-center"
         aria-label="Go back to home page">
         <NuxtImg src="/img/logo.png" alt="Edodev" width="40" height="40" format="webp" />
-      </NuxtLink>
+      </NuxtLinkLocale>
       <span class="text-center text-sm text-gray-400">
         © {{ year }}, Ridho Aulia' Rahman - All rights reserved.
       </span>
@@ -16,7 +16,6 @@
 
 <script lang="ts" setup>
 const year = new Date().getFullYear();
-const localPath = useLocalePath();
 </script>
 
 <style>
