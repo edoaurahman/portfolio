@@ -123,6 +123,12 @@ const ootProjects = [
     year: "",
     image: "/img/projects/IoT.png",
   },
+  {
+    title: "Service HP",
+    link: '',
+    year: "2024",
+    image: "/img/projects/service_hp_4.png",
+  },
 ];
 
 </script>
