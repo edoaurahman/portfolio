@@ -26,7 +26,7 @@
               <!---->
               <div class="flex items-center gap-2">
                 <span class="whitespace-nowrap text-sm font-semibold text-white/90">{{ props.title }}</span>
-                <span class="whitespace-nowrap text-xs text-neutral-500">{{ props.year }}</span>
+                <span class="whitespace-nowrap text-xs text-neutral-300">{{ props.year }}</span>
               </div>
             </div>
             <div

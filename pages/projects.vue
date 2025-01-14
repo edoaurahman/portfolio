@@ -126,8 +126,14 @@ const ootProjects = [
   {
     title: "Service HP",
     link: '',
-    year: "2024",
+    year: "2025",
     image: "/img/projects/service_hp_4.png",
+  },
+  {
+    title: "Service HP",
+    link: '',
+    year: "2025",
+    image: "/img/projects/service_hp_5.png",
   },
 ];
 
