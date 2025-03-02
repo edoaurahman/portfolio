@@ -2,12 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  nitro: {
-    preset: "vercel-edge",
-    wasm: {
-      esmImport: true,
-    },
-  },
   runtimeConfig: {
     public: {
       email: process.env.NUXT_MAIL_TARGET,
@@ -41,6 +35,7 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxt/image",
+    "@nuxthub/core",
   ],
   shadcn: {
     prefix: "",
