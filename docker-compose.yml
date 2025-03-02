@@ -1,0 +1,26 @@
+services:
+  portfolio:
+    build:
+      context: .
+      args:
+        NUXT_MAIL_HOST: ${NUXT_MAIL_HOST}
+        NUXT_MAIL_PORT: ${NUXT_MAIL_PORT}
+        NUXT_MAIL_USERNAME: ${NUXT_MAIL_USERNAME}
+        NUXT_MAIL_PASSWORD: ${NUXT_MAIL_PASSWORD}
+        NUXT_MAIL_TARGET: ${NUXT_MAIL_TARGET}
+      x-bake:
+        platforms:
+          - linux/amd64
+          - linux/arm64
+    image: edoaurahman/portfolio:latest
+    container_name: portfolio
+    ports:
+      - "3003:3000"
+    env_file:
+      - .env
+    environment:
+      - NUXT_MAIL_HOST=${NUXT_MAIL_HOST}
+      - NUXT_MAIL_PORT=${NUXT_MAIL_PORT}
+      - NUXT_MAIL_USERNAME=${NUXT_MAIL_USERNAME}
+      - NUXT_MAIL_PASSWORD=${NUXT_MAIL_PASSWORD}
+      - NUXT_MAIL_TARGET=${NUXT_MAIL_TARGET}

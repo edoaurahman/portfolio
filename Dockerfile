@@ -1,0 +1,24 @@
+FROM node:22-alpine
+WORKDIR /app
+COPY .dockerignore .
+COPY . .
+
+# Build argument untuk env
+ARG NUXT_MAIL_HOST
+ARG NUXT_MAIL_PORT
+ARG NUXT_MAIL_USERNAME
+ARG NUXT_MAIL_PASSWORD
+ARG NUXT_MAIL_TARGET
+
+# Set environment variables
+ENV NUXT_MAIL_HOST=${NUXT_MAIL_HOST}
+ENV NUXT_MAIL_PORT=${NUXT_MAIL_PORT}
+ENV NUXT_MAIL_USERNAME=${NUXT_MAIL_USERNAME}
+ENV NUXT_MAIL_PASSWORD=${NUXT_MAIL_PASSWORD}
+ENV NUXT_MAIL_TARGET=${NUXT_MAIL_TARGET}
+
+RUN npm install
+RUN npm run build
+RUN rm -rf node_modules
+CMD [ "node", ".output/server/index.mjs" ]
+EXPOSE 3000
